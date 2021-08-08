@@ -110,7 +110,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  static final String title = 'User Profile';
+  static final String title = 'User Proffile';
 
   @override
   Widget build(BuildContext context) {
@@ -146,7 +146,7 @@ class MyApp extends StatelessWidget {
               title: title,
               routes: {
                 "/": (context) {
-                  retur n BlocBuilder<AuthCubit, AuthState>(
+                  return BlocBuilder<AuthCubit, AuthState>(
                       builder: (context, authState) {
                     if (authState is Authenticated) {
                       return BlocBuilder<UserCubit, UserState>(
