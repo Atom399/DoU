@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "329276149899",
+    "project_id": "doyou-234c6",
+    "storage_bucket": "doyou-234c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329276149899:android:45cca2228aa26c4d9b848e",
+        "android_client_info": {
+          "package_name": "com.example.doyou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329276149899-3dmpafonqacaecr19odo2j8m6c45et0g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doyou",
+            "certificate_hash": "022cdbf6bb1b09757eedf5de39be08f6665a3ec4"
+          }
+        },
+        {
+          "client_id": "329276149899-kppftdiquskuaud4jk7td2k6gnvnme2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAliZI1XjhcFpUKQ3hPCR5zun7Gvqrs3mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329276149899-kppftdiquskuaud4jk7td2k6gnvnme2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
