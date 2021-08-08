@@ -110,7 +110,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  static final String title = 'User Proffile';
+  static final String title = 'User Profile';
 
   @override
   Widget build(BuildContext context) {
