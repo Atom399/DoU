@@ -120,7 +120,7 @@ class _ProfilePageState extends State<ProfilePage>
                   _animation.value + 0.5
                 ], colors: [
               Colors.grey.shade900,
-              Colors.yellow,
+              Colors.red,
               Colors.grey.shade900
             ]).createShader(rect);
           },
