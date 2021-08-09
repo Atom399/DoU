@@ -19,7 +19,24 @@ class ProfilePage extends StatefulWidget {
   _ProfilePageState createState() => _ProfilePageState();
 }
 
-class _ProfilePageState extends State<ProfilePage> {
+class _ProfilePageState extends State<ProfilePage>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _animationController;
+  late Animation _animation;
+
+  @override
+  void initState() {
+    _animationController = AnimationController(
+        vsync: this, duration: Duration(milliseconds: 2800));
+    _animationController.repeat();
+    // reverse: true, period: Duration(milliseconds: 900));
+    _animation = Tween(begin: 0.0, end: 1.0).animate(_animationController)
+      ..addListener(() {
+        setState(() {});
+      });
+    super.initState();
+  }
+
   // UserModel? currentUser;
   @override
   Widget build(BuildContext context) {
@@ -83,14 +100,33 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Widget buildName(User user) => Column(children: [
-        Text(
-          // "${currentUser!.name}",
-          user.name,
-          style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 24,
-              color: Colors.yellow.shade100),
+        ShaderMask(
+          child: Text(
+            // "${currentUser!.name}",
+            user.name,
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+                color: Colors.white,
+                fontFamily: 'OpenSans'),
+          ),
+          shaderCallback: (rect) {
+            return LinearGradient(
+                // begin: Alignment.centerLeft,
+                // end: Alignment.centerRight,
+                stops: [
+                  _animation.value - 0.5,
+                  _animation.value,
+                  _animation.value + 0.5
+                ], colors: [
+              Colors.grey.shade900,
+              Colors.yellow,
+              Colors.grey.shade900
+            ]).createShader(rect);
+          },
+          blendMode: BlendMode.srcIn,
         ),
+
         const SizedBox(height: 30),
         //   Text(
         //     user.email,
