@@ -54,7 +54,7 @@ class _ChatPageState extends State<ChatPage> {
         style: NeumorphicStyle(
           color: Colors.black,
           shape: NeumorphicShape.convex,
-          boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(30)),
+          boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(20)),
           depth: 6,
           intensity: 1,
           surfaceIntensity: -0.2,
@@ -85,17 +85,10 @@ class _ChatPageState extends State<ChatPage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Container(
-            height: 150,
-            width: 150,
-            decoration: BoxDecoration(
-                color: Colors.black.withOpacity(.5),
-                borderRadius: BorderRadius.all(Radius.circular(100))),
-            child: Icon(
-              Icons.message,
-              color: Colors.red.withOpacity(.6),
-              size: 40,
-            ),
+          Icon(
+            Icons.sentiment_satisfied_alt,
+            color: Colors.red.withOpacity(.4),
+            size: 55,
           ),
           Align(
             child: Padding(
@@ -104,8 +97,7 @@ class _ChatPageState extends State<ChatPage> {
                 "Start a chat with your friends\n on DoU",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.yellow.shade100.withOpacity(.4)),
+                    fontSize: 13, color: Colors.white38.withOpacity(.4)),
               ),
             ),
           )

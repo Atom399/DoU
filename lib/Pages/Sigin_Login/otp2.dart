@@ -23,8 +23,7 @@
 //     const Otp2({Key? key, this.phoneNumber}) : super(key: key);
 
 //   @override
-//   _Otp2State createState() => _Otp2State(); 
-   
+//   _Otp2State createState() => _Otp2State();
 
 // }
 
@@ -32,7 +31,7 @@
 // String? get phoneNumber => widget.phoneNumber;
 //  TextEditingController pinCodeController = TextEditingController();
 //  //TextEditingController _pinCodeController = TextEditingController();
-    
+
 //   //String get _phoneNumber => Widget.phoneNumber;
 //   // int start = 30;
 //   late String verId;
@@ -302,10 +301,9 @@
 //     return Container(
 //       height: 60,
 //       width: 55,
-      
-      
+
 //       child: AspectRatio(
-        
+
 //         aspectRatio: 1.0,
 
 //         child: TextField(
@@ -314,7 +312,6 @@
 //           onChanged:
 //            (pincode) {
 //              print(pincode);
-             
 
 //             if (pincode.length == 1 && last == false) {
 //               FocusScope.of(context).nextFocus();
@@ -323,8 +320,7 @@
 //               FocusScope.of(context).previousFocus();
 //             }
 //           },
-          
-         
+
 //           showCursor: false,
 //           readOnly: false,
 //           textAlign: TextAlign.center,
@@ -338,8 +334,7 @@
 //           //   verifyPin(pin);
 //           // },
 //           decoration: InputDecoration(
-            
-            
+
 //             counter: Offstage(),
 //             enabledBorder: OutlineInputBorder(
 //                 borderSide: BorderSide(width: 2, color: Colors.black),
@@ -352,7 +347,7 @@
 //       ),
 //     );
 //   }
-  
+
 //   void _submitSmsCode() {
 //     if (pinCodeController.text.isNotEmpty) {
 //       BlocProvider.of<PhoneAuthCubit>(context)
@@ -361,31 +356,31 @@
 //   }
 // }
 
-  // Future<void> verifyPhone() async {
-  //   await FirebaseAuth.instance.verifyPhoneNumber(
-  //       phoneNumber: phone,
-  //       verificationCompleted: (PhoneAuthCredential credential) async {
-  //         await FirebaseAuth.instance.signInWithCredential(credential);
-  //         final snackBar = SnackBar(content: Text("Verified Successfully"));
-  //         ScaffoldMessenger.of(context).showSnackBar(snackBar);
-  //       },
-  //       verificationFailed: (FirebaseAuthException e) {
-  //         final snackBar = SnackBar(content: Text("${e.message}"));
-  //         ScaffoldMessenger.of(context).showSnackBar(snackBar);
-  //       },
-  //       codeSent: (String verificationId, int? resendToken) {
-  //         setState(() {
-  //           codeSent = true;
-  //           verId = verificationId;
-  //         });
-  //       },
-  //       codeAutoRetrievalTimeout: (String verificationId) {
-  //         setState(() {
-  //           verId = verificationId;
-  //         });
-  //       },
-  //       timeout: Duration(seconds: 60));
-  // }
+// Future<void> verifyPhone() async {
+//   await FirebaseAuth.instance.verifyPhoneNumber(
+//       phoneNumber: phone,
+//       verificationCompleted: (PhoneAuthCredential credential) async {
+//         await FirebaseAuth.instance.signInWithCredential(credential);
+//         final snackBar = SnackBar(content: Text("Verified Successfully"));
+//         ScaffoldMessenger.of(context).showSnackBar(snackBar);
+//       },
+//       verificationFailed: (FirebaseAuthException e) {
+//         final snackBar = SnackBar(content: Text("${e.message}"));
+//         ScaffoldMessenger.of(context).showSnackBar(snackBar);
+//       },
+//       codeSent: (String verificationId, int? resendToken) {
+//         setState(() {
+//           codeSent = true;
+//           verId = verificationId;
+//         });
+//       },
+//       codeAutoRetrievalTimeout: (String verificationId) {
+//         setState(() {
+//           verId = verificationId;
+//         });
+//       },
+//       timeout: Duration(seconds: 60));
+// }
 
 //   Future<void> verifyPin(String pin) async {
 //     PhoneAuthCredential credential =
@@ -567,12 +562,12 @@
 //                             margin: EdgeInsets.only(right: 20, left: 15),
 //                             padding: EdgeInsets.fromLTRB(15, 5, 15, 5),
 //                             curve: Curves.easeIn,
-                        
+
 //                             duration: Duration(milliseconds: 260),
 //                             onPressed :_submitSmsCode,
 //                               // Navigator.pushReplacement(context,
 //                               //     BouncyPageRouteOut(widget: HomeScreen(uid: '',)));
-                            
+
 //                             style: NeumorphicStyle(
 //                               color: Colors.black,
 //                               // border: NeumorphicBorder(
@@ -629,8 +624,7 @@
 //                             text: " Resend new code ",
 //                             style: TextStyle(fontSize: 12, color: Colors.blue),
 //                             recognizer: TapGestureRecognizer()
-                            
-                          
+
 //                                 //startTimer();
 //                             //  }
 //                               ),
@@ -647,8 +641,6 @@
 //       ),
 //     );
 //   }
-  
-
 
 //   // void startTimer() {
 //   //   const onsec = Duration(seconds: 1);
@@ -666,7 +658,7 @@
 //   // }
 
 //   Widget _pinCodeWidget({bool? first, last}) {
-    
+
 //     return Container(
 //       height: 60,
 //       width: 55,
@@ -676,7 +668,7 @@
 //           controller: ,
 
 //           autofocus: true,
-          
+
 //           onChanged: (pincode) {
 //               print(pincode);
 //             },
@@ -686,7 +678,7 @@
 //             // if (value.length == 0 && first == false) {
 //             //   FocusScope.of(context).previousFocus();
 //             // }
-        
+
 //           showCursor: false,
 //           readOnly: false,
 //           textAlign: TextAlign.center,
@@ -708,7 +700,7 @@
 //         ),
 //       ),
 //     );
-    
+
 //   }
 //   void _submitSmsCode() {
 //     if (_pinCodeController.text.isNotEmpty) {
@@ -718,7 +710,7 @@
 //   }
 
 // }
-  
+
 // // }
 // import 'package:doyou/Pages/Chat/screens/home_screen.dart';
 // import 'package:doyou/Pages/animations/page_transition/BouncyPageRouteOut.dart';
@@ -777,8 +769,8 @@
 //                 alignment: Alignment.bottomCenter,
 //                 child: MaterialButton(
 //                   color: Colors.green,
-//                   onPressed: 
-//                     _submitSmsCode,              
+//                   onPressed:
+//                     _submitSmsCode,
 //                   child: Text(
 //                     "Next",
 //                     style: TextStyle(
@@ -829,9 +821,7 @@
 //   }
 // }
 
-
-
-//3rd 
+//3rd
 
 import 'package:doyou/Pages/Chat/screens/home_screen.dart';
 import 'package:doyou/Pages/Sigin_Login/sigin.dart';
@@ -856,7 +846,6 @@ class PhoneVerificationPage extends StatefulWidget {
 }
 
 class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
-  String? phoneNumber;
   String? get _phoneNumber => widget.phoneNumber;
   TextEditingController _pinCodeController = TextEditingController();
   @override
@@ -937,7 +926,7 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
                   child: Column(children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 50),
-                      child: NeumorphicButton( 
+                      child: NeumorphicButton(
                         margin: EdgeInsets.only(right: 20, left: 15),
                         padding: EdgeInsets.fromLTRB(15, 5, 15, 5),
                         curve: Curves.easeIn,
@@ -991,8 +980,9 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
             ),
           ),
         ));
-       }
- Widget _pinCodeWidget() {
+  }
+
+  Widget _pinCodeWidget() {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 50),
       child: Column(
@@ -1041,7 +1031,6 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
     if (_pinCodeController.text.isNotEmpty) {
       BlocProvider.of<PhoneAuthCubit>(context)
           .submitSmsCode(smsCode: _pinCodeController.text);
-           phoneNumber = _phoneNumber;
     }
     //  else   if (_pinCodeController.text.isNotEmpty)
     // {

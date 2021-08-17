@@ -115,13 +115,13 @@ class _ProfilePageState extends State<ProfilePage>
                 // begin: Alignment.centerLeft,
                 // end: Alignment.centerRight,
                 stops: [
-                  _animation.value - 0.5,
-                  _animation.value,
-                  _animation.value + 0.5
+                  _animation.value - 0.1,
+                  _animation.value + 0.6,
+                  _animation.value + 0.7
                 ], colors: [
-              Colors.grey.shade900,
-              Colors.red,
-              Colors.grey.shade900
+              Colors.yellow,
+              Colors.orange,
+              Colors.yellow
             ]).createShader(rect);
           },
           blendMode: BlendMode.srcIn,
