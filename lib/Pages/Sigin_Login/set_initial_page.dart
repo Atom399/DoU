@@ -292,8 +292,8 @@ class _NameState extends State<Name> {
                   height: 20,
                 ),
                 Text(
-                  '   This name will be displayed on your profile.',
-                  style: TextStyle(color: Colors.yellow.shade100),
+                  '   This name will be displayed on your profile and to others in your contact.',
+                  style: TextStyle(color: Colors.white38),
                 ),
                 SizedBox(
                   height: 40,
