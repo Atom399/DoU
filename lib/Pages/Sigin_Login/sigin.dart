@@ -1522,7 +1522,7 @@ class _SigninPageState extends State<SigninPage> {
                           text: TextSpan(
                               text: "By creating an account, you accept our ",
                               style: TextStyle(
-                                  fontSize: 11, color: Colors.yellow.shade100),
+                                  fontSize: 11, color: Colors.white38),
                               children: [
                                 TextSpan(
                                     text: " Privacy Policy ",
@@ -1544,8 +1544,7 @@ class _SigninPageState extends State<SigninPage> {
                                 TextSpan(
                                     text: " and \n",
                                     style: TextStyle(
-                                        fontSize: 11,
-                                        color: Colors.yellow.shade100)),
+                                        fontSize: 11, color: Colors.white38)),
                                 TextSpan(
                                     text: "Terms and Conditions, ",
                                     style: TextStyle(

@@ -388,7 +388,6 @@ class _NameState extends State<Name> {
           profileUrl: "",
           phoneNumber: _phoneNumber,
           name: _nameController.text);
-
       Navigator.pushReplacement(
           context, BouncyPageRouteOut(widget: HomeScreen()));
     }

@@ -988,28 +988,10 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
       child: Column(
         children: <Widget>[
           PinCodeTextField(
-            enablePinAutofill: true,
-            keyboardType: TextInputType.number,
-            // pinTheme: PinTheme(
-            //   selectedColor: Colors.transparent,
-            //   inactiveColor: Colors.transparent,
-            //   activeColor: Colors.transparent,
-            // ),
-            // boxShadows: [
-            //   BoxShadow(
-            //       color: Colors.black54,
-            //       offset: Offset(-8, 1),
-            //       blurRadius: 9.0,
-            //       spreadRadius: 2.0),
-            //   BoxShadow(
-            //       color: Colors.grey.shade500,
-            //       offset: Offset(1, 2),
-            //       blurRadius: 1.0,
-            //       spreadRadius: -1.0)
-            //   ],
-            autoDismissKeyboard: true,
+            appContext: context,
+
             cursorColor: Colors.red,
-            autovalidateMode: AutovalidateMode.always,
+            // autovalidateMode: AutovalidateMode.always,
             controller: _pinCodeController,
             length: 6,
             backgroundColor: Colors.transparent,
@@ -1018,10 +1000,8 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
             onChanged: (pinCode) {
               print(pinCode);
             },
-            appContext: context,
           ),
-          //   Text("Enter your 6 digit code",
-          //       style: TextStyle(color: Colors.yellow.shade100))
+    
         ],
       ),
     );
