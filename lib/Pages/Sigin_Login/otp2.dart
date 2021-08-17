@@ -910,7 +910,7 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.yellow.shade100,
+                    color: Colors.white38,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -989,7 +989,7 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
         children: <Widget>[
           PinCodeTextField(
             appContext: context,
-
+            keyboardType: TextInputType.number,
             cursorColor: Colors.red,
             // autovalidateMode: AutovalidateMode.always,
             controller: _pinCodeController,
@@ -1001,7 +1001,6 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
               print(pinCode);
             },
           ),
-    
         ],
       ),
     );
