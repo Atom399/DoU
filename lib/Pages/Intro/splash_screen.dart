@@ -53,16 +53,17 @@ class _SplashScreenState extends State<SplashScreen> {
               alignment: Alignment.bottomCenter,
               children: <Widget>[
                 Opacity(
-                    opacity: 0.3,
+                    opacity: 0.9,
                     child: Image.asset(
-                      'assets/images/logo/2396.jpg',
-                      height: 600.0,
+                      'assets/images/logo/2396.jpeg',
+                      height: 600,
+                      width: 200,
                       fit: BoxFit.contain,
                     )),
                 Shimmer.fromColors(
                   period: Duration(milliseconds: 1000),
                   baseColor: Color(0x8E0A0A0A),
-                  highlightColor: Colors.red,
+                  highlightColor: Colors.white,
                   //Color(0xFF06FAEE),
                   direction: ShimmerDirection.ltr,
                   child: Container(
