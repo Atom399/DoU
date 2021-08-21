@@ -323,7 +323,7 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
               ListTile(
                 title: Text(
-                  'Matches',
+                  'Matches',  
                   style: TextStyle(fontSize: 18, color: Colors.yellow.shade100),
                 ),
                 trailing: NeumorphicSwitch(
