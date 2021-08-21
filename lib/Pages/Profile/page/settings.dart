@@ -313,7 +313,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       inactiveTrackColor: Colors.black54,
                       //lightSource: LightSource.top,
                       thumbBorder:
-                          NeumorphicBorder(color: Colors.black54, width: 0.9),
+                          NeumorphicBorder(color: Colors.black54, width: 2),
                       thumbDepth: 1,
                       thumbShape: NeumorphicShape.convex,
                       // trackBorder: NeumorphicBorder(color: Colors.red, width: 0.4),
@@ -345,7 +345,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       inactiveTrackColor: Colors.black54,
                       //lightSource: LightSource.top,
                       thumbBorder:
-                          NeumorphicBorder(color: Colors.black54, width: 0.9),
+                          NeumorphicBorder(color: Colors.black54, width: 2),
                       thumbDepth: 1,
                       thumbShape: NeumorphicShape.convex,
                       // trackBorder: NeumorphicBorder(color: Colors.red, width: 0.4),
