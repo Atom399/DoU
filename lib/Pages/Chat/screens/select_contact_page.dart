@@ -31,7 +31,6 @@ class _SelectContactPageState extends State<SelectContactPage> {
     color: Colors.red,
     size: 25,
   );
-
   @override
   void initState() {
     super.initState();

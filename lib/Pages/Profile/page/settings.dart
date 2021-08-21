@@ -7,7 +7,6 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'app_info.dart';
 // ignore: unused_import
 import 'change_number.dart';
-// ignore: unused_import
 import 'change_password.dart';
 import 'help.dart';
 
@@ -29,6 +28,10 @@ class _SettingsPageState extends State<SettingsPage> {
         leading: NeumorphicButton(
           margin: EdgeInsets.fromLTRB(7, 5, 8, 10),
           padding: EdgeInsets.fromLTRB(6, 6, 9, 9),
+          // margin: EdgeInsets.fromLTRB(6, 5, 2, 10),
+          // padding: EdgeInsets.fromLTRB(8, 9, 9, 9),
+          // margin: EdgeInsets.fromLTRB(2, 5, 6, 10),
+          // padding: EdgeInsets.fromLTRB(9, 9, 8, 9),
           duration: Duration(milliseconds: 260),
           curve: Curves.easeIn,
           onPressed: () {
@@ -273,11 +276,13 @@ class _SettingsPageState extends State<SettingsPage> {
                     bottomRight: Radius.circular(15)),
                 boxShadow: [
                   BoxShadow(
+                      //color: Color.fromRGBO(0, 0, 0, 0.1),
                       color: Colors.black,
                       offset: Offset(-3, 3),
                       blurRadius: 6.0,
                       spreadRadius: -1.0),
                   BoxShadow(
+                      //color: Color.fromRGBO(255, 255, 255, 0.9),
                       color: Colors.grey.shade600,
                       offset: Offset(1, -1.5),
                       blurRadius: 2.0,
@@ -308,7 +313,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       inactiveTrackColor: Colors.black54,
                       //lightSource: LightSource.top,
                       thumbBorder:
-                          NeumorphicBorder(color: Colors.black54, width: 2),
+                          NeumorphicBorder(color: Colors.black54, width: 0.9),
                       thumbDepth: 1,
                       thumbShape: NeumorphicShape.convex,
                       // trackBorder: NeumorphicBorder(color: Colors.red, width: 0.4),
@@ -340,7 +345,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       inactiveTrackColor: Colors.black54,
                       //lightSource: LightSource.top,
                       thumbBorder:
-                          NeumorphicBorder(color: Colors.black54, width: 2),
+                          NeumorphicBorder(color: Colors.black54, width: 0.9),
                       thumbDepth: 1,
                       thumbShape: NeumorphicShape.convex,
                       // trackBorder: NeumorphicBorder(color: Colors.red, width: 0.4),

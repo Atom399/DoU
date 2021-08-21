@@ -155,10 +155,8 @@ class MyApp extends StatelessWidget {
                             final currentUserInfo = userState.users.firstWhere(
                                 (user) => user.uid == authState.uid,
                                 orElse: () => UserModel());
-                            //return HomeScreen(userInfo: currentUserInfo);
+                            return HomeScreen(userInfo: currentUserInfo);
                             //return SigninPage(uid: '');
-                                                        return SplashScreen();
-
                           }
                           return Container();
                         },

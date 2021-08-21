@@ -13,12 +13,14 @@ import 'package:doyou/Pages/Profile/utils/user_preferences.dart';
 import 'package:doyou/Pages/Profile/widget/appbar_widget.dart';
 import 'package:doyou/Pages/Profile/widget/profile_widget.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:shimmer/shimmer.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
   _ProfilePageState createState() => _ProfilePageState();
 }
 
+// class _ProfilePageState extends State<ProfilePage> {
 class _ProfilePageState extends State<ProfilePage>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
@@ -37,7 +39,7 @@ class _ProfilePageState extends State<ProfilePage>
     super.initState();
   }
 
-  // UserModel? currentUser;
+  //UserModel? currentUser;
   @override
   Widget build(BuildContext context) {
     final user = UserPreferences.getUser();
@@ -138,6 +140,32 @@ class _ProfilePageState extends State<ProfilePage>
   //       text: 'Upgrade To PRO',
   //       onClicked: () {},
   //     );
+  // Widget buildName(User user) => Column(children: [
+  //       Shimmer.fromColors(
+  //           period: Duration(milliseconds: 1000),
+  //           baseColor: Colors.yellow,
+  //           highlightColor: Colors.deepOrange,
+  //           direction: ShimmerDirection.ltr,
+  //           child: Text(
+  //               // "${currentUser!.name}",
+  //               user.name,
+  //               style: TextStyle(
+  //                 fontWeight: FontWeight.bold,
+  //                 fontSize: 24,
+  //                 fontFamily: 'OpenSans',
+  //                 //color: Colors.yellow.shade100),
+  //               ))),
+  //       const SizedBox(height: 30),
+  //       //   Text(
+  //       //     user.email,
+  //       //     style: TextStyle(color: Colors.grey),
+  //       //   )
+  //       // ],
+  //     ]);
+  // // Widget buildUpgradeButton() => ButtonWidget(
+  // //       text: 'Upgrade To PRO',
+  // //       onClicked: () {},
+  // //     );
 
   Widget buildAbout(User user) => Container(
       margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),

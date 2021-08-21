@@ -292,7 +292,7 @@ class _NameState extends State<Name> {
                   height: 20,
                 ),
                 Text(
-                  '   This name will be displayed on your profile and to others in your\n   contact.',
+                  '   This name will be displayed on your profile.',
                   style: TextStyle(color: Colors.white38),
                 ),
                 SizedBox(
@@ -388,6 +388,7 @@ class _NameState extends State<Name> {
           profileUrl: "",
           phoneNumber: _phoneNumber,
           name: _nameController.text);
+
       Navigator.pushReplacement(
           context, BouncyPageRouteOut(widget: HomeScreen()));
     }

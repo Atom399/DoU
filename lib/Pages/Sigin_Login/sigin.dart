@@ -1315,16 +1315,16 @@ class _SigninPageState extends State<SigninPage> {
           if (phoneAuthState is PhoneAuthFailure) {
             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
               behavior: SnackBarBehavior.floating,
+              backgroundColor: Colors.black,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
-              backgroundColor: Colors.black,
               content: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Something went wrong 🥴",
+                      "Something went wrong🥴",
                       style: TextStyle(color: Colors.yellow.shade100),
                     ),
                     Icon(Icons.error_outline)
@@ -1470,7 +1470,7 @@ class _SigninPageState extends State<SigninPage> {
                         dropDownArrowColor: Colors.red,
                         showDropdownIcon: true,
                         keyboardType: TextInputType.phone,
-                        countryCodeTextColor: Colors.yellow.shade100,
+                        countryCodeTextColor: Colors.white38,
                         style: TextStyle(color: Colors.yellow.shade100),
                         decoration: InputDecoration(
                             filled: true,

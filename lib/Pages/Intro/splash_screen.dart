@@ -56,8 +56,8 @@ class _SplashScreenState extends State<SplashScreen> {
                     opacity: 0.9,
                     child: Image.asset(
                       'assets/images/logo/2396.jpeg',
-                      height: 600,
-                      width: 200,
+                      height: 600.0,
+                      width:200,
                       fit: BoxFit.contain,
                     )),
                 Shimmer.fromColors(
