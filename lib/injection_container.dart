@@ -23,9 +23,7 @@ import 'package:doyou/domain/usecases/send_text_message_usecase.dart';
 import 'package:doyou/domain/usecases/sign_in_with_phone_number_usecase.dart';
 import 'package:doyou/domain/usecases/sign_out_usecase.dart';
 import 'package:doyou/domain/usecases/verify_phone_number_usecase.dart';
-
 import 'package:get_it/get_it.dart';
-
 import 'bloc/communication/communication_cubit.dart';
 import 'bloc/get_device_number/get_device_numbers_cubit.dart';
 import 'bloc/my_chat/my_chat_cubit.dart';

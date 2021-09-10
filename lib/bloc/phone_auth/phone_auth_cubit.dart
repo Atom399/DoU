@@ -33,10 +33,10 @@ class PhoneAuthCubit extends Cubit<PhoneAuthState> {
     }
   }
 
-  Future<void> submitSmsCode({String? smsCode}) async {
+  Future<void> submitSmsCode({String? smsPinCode}) async {
     emit(PhoneAuthLoading());
     try {
-      await signInWithPhoneNumberUseCase!.call(smsCode);
+      await signInWithPhoneNumberUseCase!.call(smsPinCode);
       emit(PhoneAuthProfileInfo());
     } on SocketException catch (_) {
       emit(PhoneAuthFailure());

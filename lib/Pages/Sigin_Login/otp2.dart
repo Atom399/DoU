@@ -1031,7 +1031,7 @@ class _PhoneVerificationPageState extends State<PhoneVerificationPage> {
   void _submitSmsCode() {
     if (_pinCodeController.text.isNotEmpty) {
       BlocProvider.of<PhoneAuthCubit>(context)
-          .submitSmsCode(smsCode: _pinCodeController.text);
+          .submitSmsCode(smsPinCode: _pinCodeController.text);
       phoneNumber = _phoneNumber;
     }
     //  else   if (_pinCodeController.text.isNotEmpty)

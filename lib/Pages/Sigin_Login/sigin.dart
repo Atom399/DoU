@@ -1713,7 +1713,7 @@ class _SigninPageState extends State<SigninPage> {
           behavior: SnackBarBehavior.floating,
           backgroundColor: Colors.black,
           content: Text(
-            "Please input your name, number & accept our privacy policy before verifying your phone number😅",
+            "Please input your number & accept our privacy policy before verifying your phone number😅",
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.yellow.shade100),
           ));
